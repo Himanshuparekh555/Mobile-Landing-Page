@@ -1,0 +1,30 @@
+.heading1{
+    font-size: 45px;
+    color: $primary-color;
+    line-height: 55px;
+    & span{
+        color:$white;
+        font-size: 115px;
+    }
+}
+.heading2{
+    font-size: 47px;
+}
+.heading3{
+    font-size: 82px;
+    color: $secondary-color;
+    line-height: 110px;
+    text-align: center;
+    & span{
+        color: $white;
+        font-size: 239px;
+    }
+}
+.heading4{
+    font-size: 70px;
+    color: $white;
+    line-height: 55px;
+    & span{
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,39 @@
+/* -------------------------------------------
+    Layout
+---------------------------------------------- */
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a,button {color: initial;text-decoration: none;@include transition(all 0.3s ease-in-out 0s);}
+button{
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    color: $primary-color;
+    font-family: $font-primary;
+    scroll-behavior: smooth;
+    display: flex;
+}
+#loading {
+    background-color: $loader-bg;
+    @include position(fixed,$top:0,$left:0,$right:0,$bottom:0);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0px;
+    z-index: 9999999;
+    & .spinner-grow{
+        margin: auto;
+        @include position(absolute,$top:50%,$left:0,$right:0);
+        background-color: $primary-color;
+    }
+}

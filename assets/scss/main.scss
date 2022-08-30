@@ -1,0 +1,28 @@
+﻿@charset 'UTF-8';
+
+/* 01 Mixin
+   02 config
+   04 base
+   05 components
+   06 theme   
+*/
+
+/* Mixin */
+@import "plugin/mixy-sass/mixy";
+
+/* config */
+@import "config/variables";
+
+/* base */
+@import "base/layout";
+@import "base/header/header";
+
+
+/* components */
+@import "components/button";
+@import "components/heading";
+@import "components/fonts";
+@import "components/form";
+
+/*  theme */
+@import "theme/theme";

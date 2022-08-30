@@ -1,0 +1,53 @@
+/* -------------------------------------------
+    Fonts
+---------------------------------------------- */
+@font-face {
+    font-family: 'Refuse Pro';
+    src: url('../fonts/RefusePro.eot');
+    src: local('Refuse Pro'), local('RefusePro'),
+        url('../fonts/RefusePro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RefusePro.woff2') format('woff2'),
+        url('../fonts/RefusePro.woff') format('woff'),
+        url('../fonts/RefusePro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'RefusePro';
+	src: url('../fonts/RefusePro.eot');
+    src: local('Refuse Pro'), local('RefusePro'),
+        url('../fonts/RefusePro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RefusePro.woff2') format('woff2'),
+        url('../fonts/RefusePro.woff') format('woff'),
+        url('../fonts/RefusePro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITCFranklinGothicStd-Book';
+	src: url('../fonts/ITCFranklinGothicStd-Book.eot');
+	src: local('☺'), url('../fonts/ITCFranklinGothicStd-Book.woff') format('woff'), url('../fonts/ITCFranklinGothicStd-Book.ttf') format('truetype'), url('../fonts/ITCFranklinGothicStd-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI-Regular.eot');
+    src: url('../fonts/SegoeUI-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI-Regular.woff2') format('woff2'),
+        url('../fonts/SegoeUI-Regular.woff') format('woff'),
+        url('../fonts/SegoeUI-Regular.ttf') format('truetype'),
+        url('../fonts/SegoeUI-Regular.svg#../fonts/SegoeUI-Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../fonts/Segoe UI.woff') format('woff');
+    }

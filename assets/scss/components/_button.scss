@@ -1,0 +1,27 @@
+/* -------------------------------------------
+    Button
+---------------------------------------------- */
+.btn-theme {
+    background: none;
+    background-image: url("../images/arrow-right.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    padding: 0 25px;
+    color: $primary-color;
+    font-family: $font-third;
+    border: none;
+     @include transition(all 0.3s ease-in 0s);
+    &:hover {
+        color: $primary-color;
+    }
+}
+.btn-submit{
+    background: none;
+    background-image: url("../images/btn-submit.png");
+    background-repeat: no-repeat;
+    width: 127px;
+    height: 70px;
+    padding: 0;
+    text-indent: -9999px;
+  }

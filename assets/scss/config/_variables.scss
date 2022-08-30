@@ -1,0 +1,31 @@
+/**=====================
+    default variables
+==========================**/
+
+//font 
+$font-primary: 'Refuse Pro';
+$font-secondary:'ITCFranklinGothicStd-Book',Sans-Serif;
+$font-third:"Segoe UI Regular", Sans-serif;
+
+
+//color variables
+$primary-color: #84C800;
+$secondary-color:#96D02F;
+$input-color:#00260f;
+$loader-bg:#00260f;
+$black: #000000;
+$white: #ffffff;
+$gray:#7E7E7E;
+
+
+// Media Queries
+@mixin media-mobile-lg {
+    @media screen and (max-width : 1200px) {
+        @content;
+    }
+}
+@mixin media-mobile-sm {
+    @media screen and (max-width : 768px) {
+        @content;
+    }
+}

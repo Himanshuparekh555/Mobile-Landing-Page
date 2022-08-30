@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+ Header
+----------------------------------------------------------------*/
+header{
+    padding: 24px;
+    & .logo{
+        & img{
+            width: 200px;
+            @include media-mobile-sm {
+                width: 150px
+            }
+        }
+    }
+    & .main_nav{
+        @include transition(all 0.3s ease-in-out 0s);
+        @include position(fixed,0,0,0,-250px);
+        width: 250px;
+        background-color: $white;
+        z-index: 99;
+        overflow: auto;
+        &.active{
+            left: 0;
+        }
+        & ul{
+            & li{
+                display: block;
+                padding: 15px 30px;
+                & a{
+                    font-weight: 500;
+                    color: $primary-color;
+                    font-size: 26px;
+                    &:hover,&.active{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    & .hamburger{
+        width: 30px;
+        height: 22px;
+        background: none !important;
+        z-index: 99;
+        & .icon-bar{
+            @include transition(all 0.3s ease-in-out 0s);
+            @include position(absolute);
+            width: 100%;
+            display: block;
+            height: 2px;
+            margin: auto;
+            background-color: $white;
+            &.bar-top{
+                top: 0;
+            }
+            &.bar-bottom{
+                bottom: 0;
+            }
+        }
+        &.active{
+            & .icon-bar{
+                &.bar-top{
+                    @include transform(translateY(10px) translateX(0) rotate(45deg));
+                }
+                &.bar-middle{
+                   opacity: 0;
+                }
+                &.bar-bottom{
+                    @include transform(translateY(-10px) translateX(0) rotate(-45deg));
+                }
+            }
+        }
+    }
+}
+
+.overlay{
+    @include position(fixed,0,0,0,0);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
